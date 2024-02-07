@@ -17,7 +17,7 @@ const updateTime = () => {
 updateTime()
 
 const upgradeWelcomeResume = () => {
-    let link = document.querySelector('[data-upgrade="intro-launchresume"]')
+/*    let link = document.querySelector('[data-upgrade="intro-launchresume"]')
     link.addEventListener('click', e => {
         e.preventDefault()
         window.pm.createInstance('resume')
@@ -34,7 +34,7 @@ const upgradeWelcomeResume = () => {
         e.preventDefault()
         window.pm.createInstance('portfolio')
     })
-
+*/
     link = document.querySelector('[data-upgrade="intro-launchemail"]')
     link.addEventListener('click', e => {
         e.preventDefault()
@@ -61,8 +61,3 @@ const recalculateHeight = () => {
 window.addEventListener('load', recalculateHeight)
 window.addEventListener('resize', recalculateHeight)
 window.addEventListener('orientationchange', recalculateHeight)
-
-// redirect if you hit the old domain
-if (location.host === 'kage.dev') {
-    location.href = 'https://ka.ge'
-}

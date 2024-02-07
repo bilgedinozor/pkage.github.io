@@ -223,7 +223,7 @@ window.fs.addChild(new Folder({
             img: 'img/special/doom.png',
             title: 'Doom',
             shortcut: true,
-            launch: 'welcome'      
+            launch: 'doom'      
         },
         {
             img: 'img/special/Wolfenstein.png',
