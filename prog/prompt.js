@@ -48,7 +48,7 @@ class PromptProgram extends Program {
 
     printDir() {
         this.term.writeln(`\r
- Volume in drive C is KAGE-DOS\r
+ Volume in drive C is alican-DOS\r
  Volume Serial Number is 8BAD-F00D\r
  Directory of C:\\\r
 `)

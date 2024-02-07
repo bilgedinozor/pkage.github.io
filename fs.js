@@ -185,25 +185,13 @@ window.fs.addChild(new Folder({
             img: 'img/desktop/InternetExplorer.png',
             title: 'GitHub',
             shortcut: true,
-            launch: 'web:https://github.com/pkage'
+            launch: 'web:https://github.com/bilgedinozor'
         },
         {
             img: 'img/desktop/InternetExplorer.png',
             title: 'LinkedIn',
             shortcut: true,
-            launch: 'web:https://www.linkedin.com/in/patrick-kage-652ba8122/'
-        },
-        {
-            img: 'img/desktop/InternetExplorer.png',
-            title: 'Keybase',
-            shortcut: true,
-            launch: 'web:https://keybase.io/pkage'
-        },
-        {
-            img: 'img/desktop/InternetExplorer.png',
-            title: 'My Blog',
-            shortcut: true,
-            launch: 'web:https://ka.ge/blog/'
+            launch: 'web:https://www.linkedin.com/in/ali-can-kismet-488b42210/'
         },
         {
             img: 'img/desktop/Email.png',
@@ -218,34 +206,47 @@ window.fs.addChild(new Folder({
             launch: 'portfolio'
         },
         {
-            img: 'img/special/ORCID.png',
-            title: 'ORCID',
-            shortcut: true,
-            launch: 'web:https://orcid.org/0000-0002-5639-1237'
-        },
-        {
             img: 'img/desktop/SystemFile.png',
             title: 'Welcome',
             shortcut: true,
             launch: 'welcome'
         }
     ]
-}))
 
+/* --- Games Folder --- */
+}))
+window.fs.addChild(new Folder({
+    name: 'MyGames',
+    icon: 'img/desktop/packager.png',
+    contents: [
+        {
+            img: 'img/special/doom.png',
+            title: 'Doom',
+            shortcut: true,
+            launch: 'welcome'      
+        },
+        {
+            img: 'img/special/Wolfenstein.png',
+            title: 'Wolfenstein 3D',
+            shortcut: true,
+            launch: 'web:https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        },
+        {
+            img: 'img/special/gta5.png',
+            title: 'GTA 5',
+            shortcut: true,
+            launch: 'web:https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        }
+    ]
+}))
 window.fs.addChild(new Folder({
     name: 'Recycling Bin',
     icon: 'img/desktop/RecyclingBin.png',
     contents: [
         {
-            img: 'img/desktop/InternetExplorer.png',
-            title: 'Twitter',
-            shortcut: true,
-            launch: 'web:https://twitter.com/patrick_kage'
-        },
-        {
-            img: 'img/desktop/WavFile.png',
-            title: 'roll.wav',
-            shortcut: true,
+            img: 'img/desktop/WordPad.png',
+            title: 'Bank Passwords',
+            shortcut: false,
             launch: 'web:https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         }
     ]
@@ -268,48 +269,28 @@ window.fs.addChild(new Folder({
         {
             img: 'img/desktop/Entire Internet.png',
             title: 'Entire Internet',
-            launch: 'nop'
+            launch: 'web:https://google.com'
         }
     ]
 }))
 
 window.fs.root.children['My Documents'].addChild(new Folder({
-    name: 'My Papers',
-    icon: 'img/desktop/Favorites.png',
-    contents: [
-        {
-            img: 'img/special/ArXivFile.png',
-            title: 'Class Introspection...',
-            shortcut: true,
-            launch: 'web:https://arxiv.org/abs/2107.01657'
-        },
-        {
-            img: 'img/desktop/WordPad.png',
-            title: 'Honours Project',
-            shortcut: true,
-            launch: 'web:https://misc.ka.ge/honours.pdf'
-        }
-    ]
-}))
-
-window.fs.root.children['My Documents'].addChild(new Folder({
-    name: 'My Talks',
+    name: 'My Music',
     icon: 'img/desktop/Favorites.png',
     contents: [
         {
             img: 'img/desktop/Mplayer.png',
-            title: 'KRHCAI: Class Introspection',
+            title: 'Bugün Canan Geldi Bize',
             shortcut: true,
-            launch: 'web:https://www.youtube.com/watch?v=i2gULufLnf8'
+            launch: 'web:https://www.youtube.com/watch?v=RguiX0Qck2A&ab_channel=AlicanK%C4%B1smet'
         },
         {
             img: 'img/desktop/Mplayer.png',
-            title: 'HACKCON: Discord For Hackathons',
+            title: 'Misget Düzeni',
             shortcut: true,
-            launch: 'web:https://www.youtube.com/watch?v=9bSudnnyQ5w'
+            launch: 'web:https://soundcloud.com/alican-k-smet/misket-duzeni/s-HoPRQ?si=7dd84171f9364352b850a1691f706c62&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'
         }
     ]
 }))
-
 
 window.fs.loadFilesystem()
