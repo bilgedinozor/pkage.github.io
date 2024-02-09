@@ -171,6 +171,7 @@ window.fs.addChild(new Folder({
     icon: 'img/desktop/MyDocuments.png',
     name: 'My Documents',
     contents: [
+/*      Will be edited later  
         {
             img: 'img/desktop/WordPad.png',
             title: 'Resume.pdf',
@@ -182,6 +183,12 @@ window.fs.addChild(new Folder({
             launch: 'cv'
         },
         {
+            img: 'img/desktop/MyBriefcase.png',
+            title: 'My Portfolio',
+            shortcut: true,
+            launch: 'portfolio'
+        },
+ */     {
             img: 'img/desktop/InternetExplorer.png',
             title: 'GitHub',
             shortcut: true,
@@ -198,12 +205,6 @@ window.fs.addChild(new Folder({
             title: 'Email',
             shortcut: true,
             launch: 'email'
-        },
-        {
-            img: 'img/desktop/MyBriefcase.png',
-            title: 'My Portfolio',
-            shortcut: true,
-            launch: 'portfolio'
         },
         {
             img: 'img/desktop/SystemFile.png',
