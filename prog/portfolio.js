@@ -1,4 +1,4 @@
-class PortfolioProgram extends Program {
+/*class PortfolioProgram extends Program {
     createWindow() {
         let wminfo = {
             name: 'Portfolio - Work',
@@ -265,3 +265,4 @@ class PortfolioProgram extends Program {
 }
 
 window.pm.registerPrototype('portfolio', PortfolioProgram)
+*/
