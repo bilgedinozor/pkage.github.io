@@ -218,7 +218,7 @@ window.fs.addChild(new Folder({
 }))
 window.fs.addChild(new Folder({
     name: 'MyGames',
-    icon: 'img/desktop/packager.png',
+    icon: 'img/desktop/MyGames.png',
     contents: [
         {
             img: 'img/special/doom.png',
