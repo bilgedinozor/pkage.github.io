@@ -1,7 +1,7 @@
 class PromptProgram extends Program {
     createWindow() {
         let wminfo = {
-            name: 'Prompt',
+            name: 'MS-DOS',
             title: 'MS-DOS Prompt',
             icon: 'img/desktop/MSDOS.png',
             resizable: true
@@ -27,7 +27,7 @@ class PromptProgram extends Program {
             cursorStyle: 'underline'
         })
         this.term.open(this.getBodyHandle())
-        this.term.write('\nMicrosoft Windows 98\r\n    squeezed into a web page\r\n')
+        this.term.write('\nMicrosoft(R) Windows 98\r\n  (C)Copyright Microsoft Corp. 1981-1999 \r\n')
         this.currentInput = ''
         this.writePrompt()
 

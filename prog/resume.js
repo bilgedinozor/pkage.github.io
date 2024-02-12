@@ -1,4 +1,4 @@
-class ResumeProgram extends Program {
+/* class ResumeProgram extends Program {
     isMobileBrowser() {
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     }
@@ -93,3 +93,4 @@ class CVProgram extends ResumeProgram {
 
 window.pm.registerPrototype('resume', ResumeProgram)
 window.pm.registerPrototype('cv', CVProgram)
+*/
