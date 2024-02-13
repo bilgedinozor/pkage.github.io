@@ -97,8 +97,8 @@ noscript {
 
 hr.hr--accent {
     border: 0;
-    height: 1px;
-    background: linear-gradient(90deg, red, blue);
+    height: 2px;
+    background: linear-gradient(90deg, rgb(7, 232, 183), rgb(217, 7, 232));
 }
 hr.hr--accent2 {
     border: 0;
@@ -775,4 +775,9 @@ img {
     .window[data-_wm_id="initialwindow"] {
         left: 110px;
     }
+}
+.test {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
 }
