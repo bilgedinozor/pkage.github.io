@@ -248,7 +248,7 @@ window.fs.addChild(new Folder({
             img: 'img/desktop/WordPad.png',
             title: 'Bank Passwords',
             shortcut: false,
-            launch: 'web:https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            launch: 'photo'
         }
     ]
 }))
