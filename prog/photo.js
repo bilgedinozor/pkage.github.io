@@ -1,15 +1,17 @@
 class PhotoProgram extends Program {
     createWindow(argument) {
-        let title = (argument === null) ? 'Photo' : `Photo (${argument})`
+        let title = (argument === null) ? 'Photo' : `Photo (${argument})`;
+        let imageName = argument ? argument.toLowerCase() : '';
 
         let winfo = {
-            name: 'Realy ?',
-            title,
-            icon: 'img/taskbar/Paint.png',
+            name: imageName,
+            title:imageName,
+            icon: `img/desktop/bitmap.png`, // Dynamically generate the image source
             resizable: false,
             margin: false,
             app: true
-        }
+        };
+
         let body = `
         <div class="menu-bar__container">
                 <div class="menu-bar__menu">
@@ -27,16 +29,13 @@ class PhotoProgram extends Program {
                         Help
                     </span>
                 </div>
-        <div
-        class="window"      
-        data-wm_order="0"
-      >
-       <img src="/img/special/coach.png" alt="Realy ?"/>
-    </div>
-        `
+                <div class="window" data-wm_order="0">
+                    <img src="/img/special/${imageName}" alt="${title}"/>
+                </div>
+        `;
 
-        return [winfo, body]
+        return [winfo, body];
     }
 }
 
-window.pm.registerPrototype('photo', PhotoProgram)
+window.pm.registerPrototype('photo', PhotoProgram);

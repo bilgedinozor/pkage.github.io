@@ -224,13 +224,37 @@ window.fs.addChild(new Folder({
             img: 'img/special/doom.png',
             title: 'Doom',
             shortcut: true,
-            launch: 'doom'      
+            launch: 'jsdos:doom'      
         },
         {
             img: 'img/special/Wolfenstein.png',
             title: 'Wolfenstein 3D',
             shortcut: true,
-            launch: 'web:https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            launch: 'jsdos:wolfenstein'
+        },
+        {
+            img: 'img/special/volfied.png',
+            title: 'Volfied',
+            shortcut: true,
+            launch: 'jsdos:volfied'
+        },
+        {
+            img: 'img/special/pop.png',
+            title: 'Prens of Persia',
+            shortcut: true,
+            launch: 'jsdos:pop'
+        },
+        {
+            img: 'img/special/duke.png',
+            title: 'Duke Nukem 3D',
+            shortcut: true,
+            launch: 'jsdos:duke'
+        },
+        {
+            img: 'img/special/lotus.png',
+            title: 'Lotus III',
+            shortcut: true,
+            launch: 'jsdos:lotus'
         },
         {
             img: 'img/special/gta5.png',
@@ -248,11 +272,29 @@ window.fs.addChild(new Folder({
             img: 'img/desktop/WordPad.png',
             title: 'Bank Passwords',
             shortcut: false,
-            launch: 'photo'
+            launch: 'photo:realy.png'
         }
     ]
 }))
 
+window.fs.addChild(new Folder({
+    name: 'My Pictures',
+    icon: 'img/desktop/bitmap.png',
+    contents: [
+        {
+            img: 'img/desktop/bitmap.png',
+            title: 'Akide',
+            shortcut: false,
+            launch: 'photo:akide.jpeg'
+        },
+        {
+            img: 'img/desktop/bitmap.png',
+            title: 'Lotus',
+            shortcut: false,
+            launch: 'photo:lotus.jpeg'
+        }
+    ]
+}))
 window.fs.addChild(new Folder({
     name: 'Network Neighborhood',
     icon: 'img/desktop/NetworkNeighborhood.png',
