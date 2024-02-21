@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            html, body, #jsdos {
+                width: 100%; /* Use percentage to adapt to iframe width */
+                height: 100%; /* Use percentage to adapt to iframe height */
+                margin: 0;
+                padding: 0;
+                resize: both; /* Allow resizing */
+                overflow: auto; /* Provide scrollbars if content overflows */
+            }
+        </style>
+        <script src="../js-dos.js"></script>
+        <link href="../js-dos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="jsdos">
+        <script>
+            emulators.pathPrefix = "../";
+            Dos(document.getElementById("jsdos"))
+                .run("doom.jsdos");
+        </script>
+    </body>
+</html>
