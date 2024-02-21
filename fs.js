@@ -279,16 +279,16 @@ window.fs.addChild(new Folder({
 
 window.fs.addChild(new Folder({
     name: 'My Pictures',
-    icon: 'img/desktop/bitmap.png',
+    icon: 'img/desktop/Bitmap.png',
     contents: [
         {
-            img: 'img/desktop/bitmap.png',
+            img: 'img/desktop/Bitmap.png',
             title: 'Akide',
             shortcut: false,
             launch: 'photo:akide.jpeg'
         },
         {
-            img: 'img/desktop/bitmap.png',
+            img: 'img/desktop/Bitmap.png',
             title: 'Lotus',
             shortcut: false,
             launch: 'photo:lotus.jpeg'
