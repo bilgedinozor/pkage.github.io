@@ -106,7 +106,8 @@ class Filesystem {
             'dll': 'img/desktop/DLL.png',
             'bat': 'img/desktop/BatchFile.png',
             'bmp': 'img/desktop/Bitmap.png',
-            'sys': 'img/desktop/SystemFile.png'
+            'sys': 'img/desktop/SystemFile.png',
+            'png': 'img/desktop/Bitmap.png'
         }
         const get_thumb = name => {
             const ext = get_extension(name)
@@ -312,7 +313,7 @@ window.fs.addChild(new Folder({
         {
             img: 'img/desktop/Entire Internet.png',
             title: 'Entire Internet',
-            launch: 'web:https://google.com'
+            launch: 'internet'
         }
     ]
 }))
