@@ -240,7 +240,7 @@ window.fs.addChild(new Folder({
         },
         {
             img: 'img/special/pop.png',
-            title: 'Prens of Persia',
+            title: 'Prince of Persia',
             shortcut: true,
             launch: 'jsdos:pop'
         },
