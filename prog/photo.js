@@ -1,18 +1,18 @@
 class PhotoProgram extends Program {
-    createWindow(argument) {
-        let title = (argument === null) ? 'Photo' : `Photo (${argument})`;
-        let imageName = argument ? argument.toLowerCase() : '';
+  createWindow(argument) {
+    let title = argument === null ? "Photo" : `Photo (${argument})`;
+    let imageName = argument ? argument.toLowerCase() : "";
 
-        let winfo = {
-            name: imageName,
-            title:imageName,
-            icon: `img/desktop/bitmap.png`, // Dynamically generate the image source
-            resizable: false,
-            margin: false,
-            app: true
-        };
+    let winfo = {
+      name: imageName,
+      title: imageName,
+      icon: `img/desktop/bitmap.png`, // Dynamically generate the image source
+      resizable: true,
+      margin: false,
+      app: true,
+    };
 
-        let body = `
+    let body = `
         <div class="menu-bar__container">
                 <div class="menu-bar__menu">
                     <div class="menu-bar__handle"></div>
@@ -30,12 +30,12 @@ class PhotoProgram extends Program {
                     </span>
                 </div>
                 <div class="window" data-wm_order="0">
-                    <img src="/img/special/${imageName}" alt="${title}"/>
-                </div>
+            <img src="/img/special/${imageName}" alt="${title}" style="max-width: 100%; height: auto;"/>
+        </div>
         `;
 
-        return [winfo, body];
-    }
+    return [winfo, body];
+  }
 }
 
-window.pm.registerPrototype('photo', PhotoProgram);
+window.pm.registerPrototype("photo", PhotoProgram);
